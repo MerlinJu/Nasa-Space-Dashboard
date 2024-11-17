@@ -1,0 +1,11 @@
+header {
+    background-color: var(--dark-grey-2);
+    border-bottom: 2px solid var(--dark-grey-3);
+    padding: 1.5rem 2.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

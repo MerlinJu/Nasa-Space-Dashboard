@@ -12,6 +12,9 @@ yarn-error.log
 # Angular IDE files
 /.angular/
 
+# TypeScript build info
+*.tsbuildinfo
+
 # Environment files
 .env
 .env.* 

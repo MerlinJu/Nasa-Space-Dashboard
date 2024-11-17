@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* Dark Grey Colors */
+    --dark-grey-1: #1C1C1C; /* Main background */
+    --dark-grey-2: #2A2A2A; /* Secondary background or card backgrounds */
+    --dark-grey-3: #333333; /* Borders, dividers, or subtle accents */
+    
+    /* Accent Colors */
+    --primary-accent: #4A90E2; /* Buttons, links, or interactive elements */
+    --secondary-accent: #48C2C7; /* Highlights or secondary actions */
+    --highlight-accent: #E0E0E0; /* Subtle highlights */
+
+    /* Neutral Colors */
+    --text-white: #FFFFFF; /* Main text */
+    --text-light-grey: #B0B0B0; /* Secondary text */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-grey-1);
+    color: var(--text-white);
+}
