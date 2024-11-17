@@ -11,7 +11,7 @@ export class ApodComponent implements OnInit {
 
 
    // APOD Logic ----------------------------------------------------
-   apodData: any; // declare a variable to hold the data from the Apod API
+   apodData: any = {}; // declare a variable to hold the data from the Apod API
 
    constructor(private nasaService: NasaService) {} // Inject Nasa Service into the component
  
