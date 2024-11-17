@@ -13,6 +13,7 @@
 
     /* Neutral Colors */
     --text-white: #FFFFFF; /* Main text */
+    --text-light-white: #f0f0f0;
     --text-light-grey: #B0B0B0; /* Secondary text */
 }
 

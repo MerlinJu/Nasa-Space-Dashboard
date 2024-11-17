@@ -7,6 +7,7 @@ import { appRoutes } from './app.routes'; // Import your app routes here
 // Components 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { ApodComponent } from './apod/apod.component';
 
 // Services
 import { NasaService } from './nasa.service';
@@ -16,7 +17,8 @@ import { NasaService } from './nasa.service';
 @NgModule({
   declarations: [
     DashboardComponent,  // Declare dashboard component
-    HeaderComponent  // Declare header component
+    HeaderComponent,  // Declare header component
+    ApodComponent  // Declare APOD component
   ],
   imports: [
     BrowserModule,
