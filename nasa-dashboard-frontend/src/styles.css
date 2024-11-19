@@ -28,3 +28,15 @@ body {
     background-color: var(--dark-grey-1);
     color: var(--text-white);
 }
+
+
+/* Common Styles for all components */
+.card {
+    background-color: var(--dark-grey-2);
+    padding: 2.1rem;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--dark-grey-3);
+    display: flex;
+    gap: 2rem;
+}
