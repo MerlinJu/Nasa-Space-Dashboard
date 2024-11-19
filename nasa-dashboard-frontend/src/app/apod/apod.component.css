@@ -1,0 +1,46 @@
+.apod-card {
+    max-width: 60%;
+}
+
+.apod-data {
+    flex: 0 0 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 0 20px;
+}
+.apod-data h1 {
+    color: var(--text-light-white);
+    font-size: 3rem; /* Larger for emphasis */
+    font-weight: 700;
+    letter-spacing: 3px; /* Wide character spacing */
+    text-transform: uppercase; /* Make title uppercase */
+    margin-bottom: .2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.apod-data h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-light-grey); /* Slightly darker grey for the subtitle */
+    letter-spacing: 1.5px; /* Slightly increased spacing */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    opacity: 0.8; /* Slightly faded effect for a softer look */
+}
+.apod-data p {
+    font-size: 1.2rem;
+    color: #f9f9f9; /* Slightly warmer white for better contrast */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    opacity: 0.9;
+    max-width: 80%;
+}
+
+
+.apod-card img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image stretches to fill the column */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 8px;
+}

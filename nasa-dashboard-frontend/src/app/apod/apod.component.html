@@ -1,0 +1,26 @@
+<div class="apod-card card">
+
+    <div class="apod-data">
+        <h1>APOD </h1>
+        <h2>Astronomical picture of the day</h2>
+        <p>{{ apodData.title }}</p>
+        
+    </div>
+    
+
+
+    <div class="apod-img-container">
+        <!-- Display loading message if data is not available yet -->
+        <div *ngIf="!apodData">Loading...</div>
+
+        <!-- Display the APOD img available -->
+        <img [src]="apodData.url" alt="Astronomy Picture of the Day" />
+
+    </div>
+    
+    
+
+</div>
+
+  
+

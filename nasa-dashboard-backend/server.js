@@ -11,6 +11,7 @@ require('dotenv').config(); // load env var from .env files
 // tells express to use express.json as middleware for incoming  requests
 app.use(express.json());
 
+
 // enable cors for all origins
 // app.use(cors()); // fine for local development 
 
@@ -21,6 +22,17 @@ app.use(cors({
 // NASA API KEY
 const NASA_API_KEY = process.env.NASA_API_KEY;
 
+// API Services 
+
+app.get('/api/mars_weather', async (req, res) => {
+  try {
+    const response = await axios.get(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=json&ver=1.0`);
+    res.json(response.data);
+  } catch (err) {
+    res.status(500).json({ message: 'Error fetching mars weather data...' });
+  }
+});
+
 
 // Endpoint for getting the current Astronomy Picture of the Day (APOD) from NASA API
 app.get('/api/apod', async (req, res) => {
@@ -30,7 +42,7 @@ app.get('/api/apod', async (req, res) => {
     } catch (error) {
       res.status(500).json({ message: 'Error fetching nasa apod data...' });
     }
-  });
+});
 
 
 
