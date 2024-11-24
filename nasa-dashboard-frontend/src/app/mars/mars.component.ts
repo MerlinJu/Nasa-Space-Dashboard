@@ -16,6 +16,7 @@ export class MarsComponent implements OnInit {
   ngOnInit(): void {
       console.log("Mars Component initialized");
 
+        // Call the getMarsWeather method from the injected NasaService to get data when the component initializes
         // observer pattern for data handling from backend
         this.nasaService.getMarsWeather().subscribe({
           next: (data) => {
