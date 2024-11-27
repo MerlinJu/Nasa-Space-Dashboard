@@ -1,6 +1,19 @@
 <div class="mars-card card">
-    <p>test in mars</p>
-    <h1>{{ weather_data | json }}</h1>
+    <div class="mars-card-header">
+        <h1>Mars Weather</h1>
+        <a href="https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf" target="_blank">Reference here</a>
+    </div>
+    
+    <div *ngFor="let weather of processed_data" class="weather-card">
+        <h2>Sol {{ weather.sol }}</h2>
+        <p><strong>Date:</strong> {{ weather.date | date: 'long' }}</p>
+        <p><strong>Average Temp:</strong> {{ weather.avg_temp }}°C</p>
+        <p><strong>Min Temp:</strong> {{ weather.min_temp }}°C</p>
+        <p><strong>Max Temp:</strong> {{ weather.max_temp }}°C</p>
+        <p><strong>Wind Speed:</strong> {{ weather.wind_speed }} m/s</p>
+        <p><strong>Pressure:</strong> {{ weather.pressure }} Pa</p>
+        <p><strong>Season:</strong> {{ weather.season }}</p>
+      </div>
 </div>
 
 <!-- !!!! MAYBE Visualize the weather data in graphs later... --> 
