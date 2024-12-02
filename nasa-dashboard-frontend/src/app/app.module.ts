@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http'; // Import the new provideHttpClient method
+import { FormsModule } from '@angular/forms';
 import { appRoutes } from './app.routes'; // Import your app routes here
 
 // Components 
@@ -24,6 +25,7 @@ import { NasaService } from './nasa.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,  // Import FormsModule for form handling
     RouterModule.forRoot(appRoutes) // Configure routes here
   ],
   providers: [

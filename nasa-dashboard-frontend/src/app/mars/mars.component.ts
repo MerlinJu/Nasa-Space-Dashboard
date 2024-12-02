@@ -10,6 +10,9 @@ export class MarsComponent implements OnInit {
   weather_data: any = {};
   processed_data: any = [];
 
+  // variable that stores the sol that the user has selected in the dropdown list
+  selectedSol: any = {};
+
 
   constructor(private nasaService: NasaService) {}
 
@@ -26,6 +29,9 @@ export class MarsComponent implements OnInit {
               // Transform data into a simplified structure
             this.processed_data = this.transformMarsWeatherData(data);
             console.log("Processed Mars Weather Data", this.processed_data);
+
+            // Select the first sol by default
+            this.selectSol(this.processed_data[0]);
           }, error: (error) => {
             console.error('Error fetching Mars weather data:', error); // handle error
           }, complete: () => {
@@ -36,11 +42,12 @@ export class MarsComponent implements OnInit {
 
   // Method to fetch Mars Weather data again when the button is clicked
 
-  /**
-   * Transform the full Mars weather data into a simplified structure
-   * @param data Full weather data
-   * @returns Simplified weather data
-   */
+  selectSol(sol: any): void {
+    this.selectedSol = sol;
+    console.log("Selected Sol:", this.selectedSol);
+  }
+ 
+  // Method to transform the api data output to a formatted JSON string with each sol as the key 
   transformMarsWeatherData(data: any): any[] {
     console.log('Transforming Mars weather data...');
     const processed = [];
