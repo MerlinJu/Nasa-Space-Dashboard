@@ -19,6 +19,7 @@ This dashboard visualizes and interacts with data provided by the official NASA 
 
 **NASA Open API**
 The dashboard uses data directly from the official [NASA Open API](https://api.nasa.gov)
+
 **Mars Weather Data**
 The Mars Weather data is sourced from the InSight Mars Lander API.
 For detailed information about the API and its parameters, refer to:
@@ -35,19 +36,19 @@ Download and install from [here](https://nodejs.org/)
 
 2. **Angular CLI** 
 Install globally using: 
-```npm install -g @angular/cli```
+`npm install -g @angular/cli`
 
 **Steps**
 
 1. Clone the repository:
-```git clone https://github.com/your-repo/nase-space-dashboard.git
-cd nase-space-dashboard```
+`git clone https://github.com/your-repo/nase-space-dashboard.git`
+`cd nase-space-dashboard`
 
 2. Install dependencies: 
-```npm install```
+`npm install`
 
 3. Run the development server:
-```ng serve````
+`ng serve`
 Open your browser at http://localhost:4200.
 
 ---
