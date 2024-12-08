@@ -40,12 +40,17 @@ export class MarsComponent implements OnInit {
     });
   }
 
+
   // Method to fetch Mars Weather data again when the button is clicked
+
+  
 
   selectSol(sol: any): void {
     this.selectedSol = sol;
     console.log("Selected Sol:", this.selectedSol);
   }
+
+
  
   // Method to transform the api data output to a formatted JSON string with each sol as the key 
   transformMarsWeatherData(data: any): any[] {
