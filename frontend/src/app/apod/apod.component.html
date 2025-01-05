@@ -4,11 +4,8 @@
         <h1>APOD </h1>
         <h2>Astronomical picture of the day</h2>
         <p>{{ apodData.title }}</p>
-        
     </div>
     
-
-
     <div class="apod-img-container">
         <!-- Display loading message if data is not available yet -->
         <div *ngIf="!apodData">Loading...</div>
@@ -22,6 +19,5 @@
         </div>
 
     </div>
-    
     
 </div>

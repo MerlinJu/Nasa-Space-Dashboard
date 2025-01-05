@@ -1,5 +1,13 @@
 .apod-card {
-    max-width: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1201px) {
+    .apod-card {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .apod-data {
@@ -38,9 +46,20 @@
 }
 
 
+.apod-img-container {
+    margin-right: 1rem;
+}
+
 .apod-card img {
     max-width: 100%;
     max-height: 100%; /* Ensure the image stretches to fill the column */
     object-fit: cover; /* Cover the area while maintaining aspect ratio */
     border-radius: 8px;
+}
+.apod-card iframe {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image stretches to fill the column */
+    border-radius: 4px;
+    border: none;
+    aspect-ratio: 16 / 9;
 }
