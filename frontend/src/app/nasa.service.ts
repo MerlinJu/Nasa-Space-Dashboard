@@ -5,12 +5,19 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+// class called Nasa Services which implements methods ( e.g get ) for accesing the Nasa API endpoints.
 export class NasaService {
     // Backend URL
     private apiUrl = 'http://localhost:3000/api'
 
     constructor(private http: HttpClient) { } // constructor to inject the http client into the Nasa Service class
 
+
+    getNearEarthAsteroids(): Observable<any> {
+      console.log('Fetching Asteroids Data...'); // log when request is made
+      return this.http.get(`${this.apiUrl}/asteroids`)
+    }
 
     // Method to get Mars Weather data from backend 
     getMarsWeather(): Observable<any> {
