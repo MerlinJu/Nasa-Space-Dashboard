@@ -15,6 +15,13 @@
     --text-white: #FFFFFF; /* Main text */
     --text-light-white: #f0f0f0;
     --text-light-grey: #B0B0B0; /* Secondary text */
+
+    --breakpoint-tiny: 500px;  /* Tiny devices (e.g., very small phones) */
+    --breakpoint-small: 768px; /* Small devices (e.g., tablets, larger phones) */
+    --breakpoint-medium: 1024px; /* Medium devices (e.g., small laptops) */
+    --breakpoint-large: 1200px; /* Large devices (e.g., desktops) */
+    --breakpoint-xlarge: 1440px; /* Extra large devices (e.g., larger desktops, widescreens) */
+
 }
 
 * {
