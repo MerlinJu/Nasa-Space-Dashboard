@@ -1,0 +1,22 @@
+.mars-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.mars-card-header {
+    display: flex;
+    position: relative;
+}
+
+.mars-card-header a {
+    margin-left: 2rem;
+    font-size: .9em;
+    text-decoration: none;
+    color: var(--primary-accent);
+    position: absolute;
+    top: .3rem;
+    right: 0;
+}
+.mars-card-header a:hover {
+    text-decoration: underline;
+}

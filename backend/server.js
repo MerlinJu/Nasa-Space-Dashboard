@@ -22,8 +22,11 @@ app.use(cors({
 // NASA API KEY
 const NASA_API_KEY = process.env.NASA_API_KEY;
 
+
 // API Services 
 
+
+// Endpoint for getting the current Mars weather data from NASA API
 app.get('/api/mars_weather', async (req, res) => {
   try {
     const response = await axios.get(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=json&ver=1.0`);
